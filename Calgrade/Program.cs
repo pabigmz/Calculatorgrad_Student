@@ -208,7 +208,7 @@ namespace CalculatorGrade
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Failed to load file.");
+                Console.WriteLine($"Failed to load file. {ex.Message}");
                 return new List<Student>();
             }
         }
